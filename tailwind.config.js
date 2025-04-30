@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         primary: '#732354', // Example: Your brand pink
+        dark: '#1a1a1a',
       },
       fontFamily: {
         electrolize: ['"Electrolize"', 'sans-serif'],
