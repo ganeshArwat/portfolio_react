@@ -1,6 +1,7 @@
+import { Element } from 'react-scroll'
 function ContactSection() {
   return (
-    <section id='contact_section' className='h-[250px]'>
+    <Element name='contact_section' className='h-[250px]'>
       <div className='flex h-full items-center justify-center rounded-t-[143px] bg-gradient-to-r from-[#8630ca] to-[#732354] text-center text-white'>
         <div className='w-[45%] pl-[50px] text-3xl font-semibold'>
           <h3 className='flex flex-wrap items-center justify-end gap-4 sm:justify-start'>
@@ -29,7 +30,7 @@ function ContactSection() {
           </h2>
         </div>
       </div>
-    </section>
+    </Element>
   )
 }
 

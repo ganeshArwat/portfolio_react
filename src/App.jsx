@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
 import NavBar from './components/NavBar'
 import ResumeSection from './components/ResumeSection'
+import SkillsSection from './components/SkillsSection'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <AboutSection />
+      <SkillsSection />
       <ResumeSection />
       <ContactSection />
       <Footer />

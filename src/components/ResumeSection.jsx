@@ -1,9 +1,15 @@
+import { Element } from 'react-scroll'
+
 function ResumeSection() {
   return (
-    <section
-      id='resume_section'
+    <Element
+      name='resume_section'
       className='flex h-[320px] flex-col justify-center gap-5'
     >
+      {/* <section
+        id='resume_section'
+        className='flex h-[320px] flex-col justify-center gap-5'
+      > */}
       <h2 className='ml-[150px] text-4xl font-bold text-dark'>
         Download My Resume
       </h2>
@@ -17,7 +23,8 @@ function ResumeSection() {
       >
         Download
       </a>
-    </section>
+      {/* </section> */}
+    </Element>
   )
 }
 
