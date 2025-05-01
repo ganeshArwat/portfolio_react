@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Element } from 'react-scroll'
 
+// https://devicon.dev/
 const skillUrlMap = {
   Css: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
   Html: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
