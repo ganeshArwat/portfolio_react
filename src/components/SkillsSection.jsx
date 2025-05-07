@@ -109,7 +109,7 @@ function SkillsSection() {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`rounded px-3 py-1 text-sm tracking-wide transition-all duration-200 hover:text-yellow-400 ${
+                className={`rounded px-3 py-1 text-sm tracking-wide transition-all duration-200 hover:text-balck hover:bg-yellow-400 ${
                   activeCategory === category
                     ? 'bg-yellow-400 font-semibold text-black'
                     : 'text-gray-400'
