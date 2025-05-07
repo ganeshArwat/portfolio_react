@@ -32,6 +32,37 @@ function ProjectSection() {
       github: 'https://github.com/ganeshArwat/CneDB',
       demo: 'https://cne-db.vercel.app/',
     },
+    {
+      title: 'Cne Food',
+      description: 'Cne Food is Promotional Website for a Food Delivery App',
+      image: '/projects/cneFood1.png',
+      stack: [
+        'Html',
+        'Css',
+        'Javascript',
+        'Responsive Design',
+        'Netlify',
+        'Figma',
+      ],
+      github: 'https://github.com/ganeshArwat/Cnefood',
+      demo: 'https://cnefood.netlify.app',
+    },
+    {
+      title: 'Blind Assistant',
+      description:
+        'Selected among the top 100 innovative projects in Mumbai at the Ciia Exhibit 2022, The Blind Assistant is an IoT-based solution designed to assist visually impaired individuals in navigating their surroundings safely and independently.',
+      image: '/projects/BlindAssistant.png',
+      stack: [
+        'python',
+        'Raspberry Pi',
+        'Arduino',
+        'Blynk',
+        'Sensors',
+        'Object Detection',
+      ],
+      github: '',
+      demo: 'https://drive.google.com/file/d/1NTcEL3tTqp-5izQQNaRth6VAB6LwUkP-/view',
+    },
   ]
 
   return (
