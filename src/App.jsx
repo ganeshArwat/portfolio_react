@@ -6,6 +6,7 @@ import CertificationSection from './components/CertificationSection'
 import ResumeSection from './components/ResumeSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import ProjectSection from './components/ProjectSection'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutSection />
       <SkillsSection />
       <CertificationSection />
+      <ProjectSection />
       <ResumeSection />
       <ContactSection />
       <Footer />

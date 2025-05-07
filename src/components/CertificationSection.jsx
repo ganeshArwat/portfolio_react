@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import 'swiper/css'
@@ -14,8 +15,8 @@ const certificates = [
 
 function CertificationSection() {
   return (
-    <section
-      id='Certification_section'
+    <Element
+      name='Certification_section'
       className='w-full bg-gradient-to-br from-[#e7e7ec] to-[#ffffff] px-4 py-20 sm:px-6 lg:px-12'
     >
       {/* Header */}
@@ -51,7 +52,7 @@ function CertificationSection() {
         >
           {certificates.map((certificate, index) => (
             <SwiperSlide key={index}>
-              <div className='group relative mx-auto max-w-[350px] rounded-2xl border border-gray-300  bg-white/60 p-4 shadow-xl backdrop-blur-lg transition-all duration-300 hover:shadow-2xl'>
+              <div className='group relative mx-auto max-w-[350px] rounded-2xl border border-gray-300 bg-white/60 p-4 shadow-xl backdrop-blur-lg transition-all duration-300 hover:shadow-2xl'>
                 <img
                   src={certificate}
                   alt={`Certificate ${index + 1}`}
@@ -76,7 +77,7 @@ function CertificationSection() {
           </button>
         </div>
       </div>
-    </section>
+    </Element>
   )
 }
 export default CertificationSection
