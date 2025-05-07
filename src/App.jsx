@@ -7,6 +7,7 @@ import ResumeSection from './components/ResumeSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import ProjectSection from './components/ProjectSection'
+import ExperienceSction from './components/ExperienceSction'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <SkillsSection />
       <CertificationSection />
       <ProjectSection />
+      <ExperienceSction />
       <ResumeSection />
       <ContactSection />
       <Footer />
