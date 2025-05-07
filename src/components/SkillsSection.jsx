@@ -93,19 +93,18 @@ function SkillsSection() {
       name='skills_section'
       className='relative bg-[#0f0f0f] px-4 py-12 text-white md:px-16'
     >
-      {/* <section className='relative bg-[#0f0f0f] px-4 py-12 text-white md:px-16'> */}
-      <div className='mx-auto flex max-w-6xl'>
+      <div className='mx-auto flex max-w-6xl flex-col md:flex-row'>
         {/* Vertical Nav */}
-        <div className='mr-8 flex flex-col items-center justify-center'>
-          {/* Rotated "Skills" label */}
-          <div className='relative mb-6 h-32'>
-            <span className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-90deg] text-xl font-semibold tracking-widest text-white'>
+        <div className='mb-10 flex flex-col items-center justify-center md:mb-0 md:mr-8'>
+          {/* Rotated "Skills" label for md+ screens, horizontal on small */}
+          <div className='relative mb-6 h-10 md:h-32'>
+            <span className='text-xl font-semibold tracking-widest text-white md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:rotate-[-90deg]'>
               <span className='border-l-4 border-yellow-400 pl-3'>Skills</span>
             </span>
           </div>
 
           {/* Category Buttons */}
-          <div className='flex flex-col space-y-2'>
+          <div className='flex flex-wrap justify-center gap-2 md:flex-col md:gap-0 md:space-y-2'>
             {Object.keys(skillCategories).map((category) => (
               <button
                 key={category}
@@ -132,7 +131,7 @@ function SkillsSection() {
           </p>
 
           <div className='flex justify-center'>
-            <div className='grid grid-cols-2 gap-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
+            <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
               {skillCategories[activeCategory].map(({ name, icon }) => (
                 <div
                   key={name}
@@ -141,7 +140,7 @@ function SkillsSection() {
                   <img
                     src={icon}
                     alt={name}
-                    className='h-15 w-15 mb-2 object-contain'
+                    className='mb-2 h-12 w-12 object-contain'
                   />
                   <p className='text-sm font-semibold'>{name}</p>
                 </div>
@@ -150,7 +149,6 @@ function SkillsSection() {
           </div>
         </div>
       </div>
-      {/* </section> */}
     </Element>
   )
 }
