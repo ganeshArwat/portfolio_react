@@ -18,9 +18,9 @@ function ExperienceSection() {
   const experience = [
     {
       year: '2022 - 2024',
-      title: 'PHP Developer',
+      title: 'Software Developer',
       company: 'ITD Services Pvt. Ltd.',
-      desc: 'Developed and maintained web application components using PHP and the CodeIgniter framework, enhancing functionality and user experience.',
+      desc: 'Developed and maintained core components of the company\'s SaaS product, contributing to improved functionality and user experience.',
     },
   ]
 
