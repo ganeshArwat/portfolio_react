@@ -8,7 +8,7 @@ function ExperienceSection() {
       desc: 'CGPA: 9.45 | Secured First Rank in program',
     },
     {
-      year: '2024 - Present',
+      year: '2024 - 2025',
       title: 'Specialized in Software Development & Problem Solving Program',
       organization: 'Scaler',
       desc: 'Top 1% Learner at Scaler - A Milestone in My Upskilling Journey',

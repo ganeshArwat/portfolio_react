@@ -8,6 +8,33 @@ import 'swiper/css/pagination'
 function ProjectSection() {
   const projects = [
     {
+      title: 'Abhanga Masale E-commerce Web App',
+      description:
+        'Abhanga Masale is a full-stack E-commerce web application built for a traditional spice brand. Developed using React, Tailwind CSS, Express, and MongoDB, it allows users to explore a wide range of spice products, add them to the cart, and place orders seamlessly. The platform also includes admin controls for managing products and orders.',
+      image: '/projects/abhanga_4.png',
+      stack: [
+        'React',
+        'TailwindCSS',
+        'Express',
+        'MongoDB',
+        'Node.js',
+      ],
+      demo: 'https://drive.google.com/file/d/1tzEWkPTCkXTkdyaRZNn9SG8mBSvpdpBp/view',
+    },
+    {
+      title: 'The Travel Empire',
+      description:
+        'Designed and developed a complete brand and web presence for The Travel Empire, a travel agency. The project included end-to-end delivery: logo design, responsive website development using React and Tailwind CSS, SEO optimization, deployment, and client handover. Focused on creating a user-friendly, visually appealing interface optimized for',
+      image: '/projects/travel_empire.png',
+      stack: [
+        'React',
+        'TailwindCSS',
+        'Responsive Design',
+        'Vercel',
+      ],
+      demo: 'https://thetravelempire.in/',
+    },
+    {
       title: 'CneMeet',
       description:
         'CneMeet is a One-to-One Real-Time Communication web application built with React, Socket.IO, and WebRTC (RTCPeerConnection). It enables users to make video/audio calls, chat in-call, and share their screen directly from the browser.',
@@ -63,35 +90,6 @@ function ProjectSection() {
       github: '',
       demo: 'https://drive.google.com/file/d/1NTcEL3tTqp-5izQQNaRth6VAB6LwUkP-/view',
     },
-    {
-      title: 'Abhanga Masale',
-      description:
-        'Abhanga Masale is a full-stack E-commerce web application built for a traditional spice brand. Developed using React, Tailwind CSS, Express, and MongoDB, it allows users to explore a wide range of spice products, add them to the cart, and place orders seamlessly. The platform also includes admin controls for managing products and orders.',
-      image: '/projects/abhanga_4.png',
-      stack: [
-        'React',
-        'TailwindCSS',
-        'Express',
-        'MongoDB',
-        'Node.js',
-      ],
-      demo: 'https://drive.google.com/file/d/1tzEWkPTCkXTkdyaRZNn9SG8mBSvpdpBp/view',
-    },
-    {
-      title: 'Shubham Travels',
-      description:
-        'Shubham Travels is a modern promotional website for a local travel service, built with React and Tailwind CSS. It showcases city tour packages, transport services, and contact details, all within a clean, responsive UI deployed on Vercel.',
-      image: '/projects/shubham_travels.png',
-      stack: [
-        'React',
-        'TailwindCSS',
-        'Responsive Design',
-        'Vercel',
-      ],
-      demo: 'https://shubham-travels.vercel.app/',
-    }
-
-
   ]
 
   return (

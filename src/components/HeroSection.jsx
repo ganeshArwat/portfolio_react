@@ -1,4 +1,5 @@
 import { Element } from 'react-scroll'
+import { Link } from 'react-scroll'
 function HeroSection() {
   return (
     <Element
@@ -17,12 +18,15 @@ function HeroSection() {
           <br />
           for creating efficient and innovative solutions.
         </p>
-        <a
-          href='#contact_section'
+        <Link
+          to='contact_section'
+          smooth={true}
+          duration={500}
+          offset={-80}
           className='mt-4 inline-block border border-primary bg-primary px-6 py-3 text-[15px] font-bold text-white transition-all duration-300 hover:bg-white hover:text-[#732354]'
         >
           Contact Me
-        </a>
+        </Link>
       </div>
 
       {/* Image */}

@@ -11,6 +11,9 @@ const certificates = [
   '/certificates/4.png',
   '/certificates/5.png',
   '/certificates/6.png',
+  '/certificates/7.jpg',
+  '/certificates/8.jpg',
+  '/certificates/9.jpg',
 ]
 
 function CertificationSection() {
