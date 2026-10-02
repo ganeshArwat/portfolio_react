@@ -15,15 +15,22 @@ function NavBar() {
   return (
     <header className='sticky top-0 z-50 flex items-center justify-between bg-[linear-gradient(90deg,#05030f_0%,#0a081c_42%,#16143c_100%)] px-5 py-2'>
       {/* Logo */}
-      <div className='cursor-pointer transition-transform duration-300 hover:scale-105'>
-        <Link to='hero_section' smooth={true} duration={500} offset={-80}>
-          <img
-            className='h-[60px] w-auto object-contain md:h-[70px]'
-            src='/images/logo.png'
-            alt='Logo'
-          />
-        </Link>
-      </div>
+      <Link
+        to='hero_section'
+        smooth={true}
+        duration={500}
+        offset={-80}
+        className='group flex cursor-pointer items-center gap-3'
+      >
+        <img
+          className='h-11 w-11 rounded-xl object-contain drop-shadow-[0_0_10px_rgba(168,85,247,0.85)] transition duration-300 group-hover:drop-shadow-[0_0_16px_rgba(236,72,153,0.9)] md:h-12 md:w-12'
+          src='/images/logo.png'
+          alt='Ganesh Arwat logo'
+        />
+        <span className='text-[17px] font-semibold tracking-tight text-white md:text-lg'>
+          Ganesh Arwat
+        </span>
+      </Link>
 
       {/* Desktop Nav */}
       <nav className='hidden gap-3 md:flex'>
