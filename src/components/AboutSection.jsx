@@ -117,10 +117,10 @@ function AboutSection() {
             return (
               <li
                 key={item.title}
-                className={`flex items-center gap-3 rounded-2xl px-4 py-4 ${item.cardClass}`}
+                className={`group flex items-center gap-3 rounded-2xl px-4 py-4 transition duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-lg ${item.cardClass}`}
               >
                 <span
-                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${item.iconClass}`}
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full transition duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-6 ${item.iconClass}`}
                 >
                   <Icon size={20} strokeWidth={1.75} />
                 </span>
@@ -143,10 +143,10 @@ function AboutSection() {
             return (
               <li
                 key={item.title}
-                className='flex items-center gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3.5 shadow-sm'
+                className='group flex items-center gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3.5 shadow-sm transition duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-lg'
               >
                 <span
-                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${item.iconClass}`}
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full transition duration-300 motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-6 ${item.iconClass}`}
                 >
                   <Icon size={18} strokeWidth={1.75} />
                 </span>

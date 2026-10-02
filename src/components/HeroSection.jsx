@@ -56,15 +56,18 @@ function HeroSection() {
               smooth={true}
               duration={500}
               offset={-80}
-              className='inline-flex cursor-pointer items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-900/40 transition hover:from-violet-500 hover:to-purple-400'
+              className='group inline-flex cursor-pointer items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-900/40 transition duration-300 hover:from-violet-500 hover:to-purple-400 motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-purple-700/50 motion-safe:active:translate-y-0'
             >
               Contact Me
-              <ArrowRight size={16} />
+              <ArrowRight
+                size={16}
+                className='transition duration-300 motion-safe:group-hover:translate-x-1'
+              />
             </Link>
             <a
               href='/Ganesh_Arwat_Resume.pdf'
               download
-              className='inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white transition hover:border-white/30 hover:bg-white/10'
+              className='inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white transition duration-300 hover:border-white/30 hover:bg-white/10 motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0'
             >
               Download Resume
               <Download size={16} />
@@ -79,7 +82,7 @@ function HeroSection() {
                 target={href.startsWith('mailto:') ? undefined : '_blank'}
                 rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
                 aria-label={label}
-                className='flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-gray-200 transition hover:border-violet-400/40 hover:text-white'
+                className='flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-gray-200 transition duration-300 hover:border-violet-400/40 hover:text-white motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-lg motion-safe:hover:shadow-violet-500/20 motion-safe:active:translate-y-0'
               >
                 <Icon size={18} />
               </a>
