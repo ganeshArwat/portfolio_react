@@ -13,7 +13,7 @@ function NavBar() {
     { href: 'contact_section', label: 'Contact' },
   ]
   return (
-    <header className='sticky top-0 z-50 flex items-center justify-between bg-black px-5 py-2'>
+    <header className='sticky top-0 z-50 flex items-center justify-between bg-[linear-gradient(90deg,#05030f_0%,#0a081c_42%,#16143c_100%)] px-5 py-2'>
       {/* Logo */}
       <div className='cursor-pointer transition-transform duration-300 hover:scale-105'>
         <Link to='hero_section' smooth={true} duration={500} offset={-80}>
@@ -51,7 +51,7 @@ function NavBar() {
 
       {/* Mobile Nav Menu */}
       {isMenuOpen && (
-        <div className='absolute left-0 right-0 top-[70px] z-40 flex flex-col items-center gap-3 bg-black py-4 shadow-md md:hidden'>
+        <div className='absolute left-0 right-0 top-[70px] z-40 flex flex-col items-center gap-3 bg-[linear-gradient(90deg,#05030f_0%,#0a081c_42%,#16143c_100%)] py-4 shadow-md md:hidden'>
           {navLinks.map((link) => (
             <Link
               to={link.href}
