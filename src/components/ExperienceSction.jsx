@@ -1,28 +1,7 @@
 import { Element } from 'react-scroll'
-function ExperienceSection() {
-  const education = [
-    {
-      year: '2019 - 2022',
-      title: 'University of Mumbai',
-      organization: 'B.Sc (Information Technology)',
-      desc: 'CGPA: 9.45 | Secured First Rank in program',
-    },
-    {
-      year: '2024 - 2025',
-      title: 'Specialized in Software Development & Problem Solving Program',
-      organization: 'Scaler',
-      desc: 'Top 1% Learner at Scaler - A Milestone in My Upskilling Journey',
-    },
-  ]
+import { education, experience, formatPeriod } from '../data/experience'
 
-  const experience = [
-    {
-      year: '2022 - 2024',
-      title: 'Software Developer',
-      company: 'ITD Services Pvt. Ltd.',
-      desc: 'Developed and maintained core components of the company\'s SaaS product, contributing to improved functionality and user experience.',
-    },
-  ]
+function ExperienceSection() {
 
   return (
     <Element
@@ -52,7 +31,13 @@ function ExperienceSection() {
           </h3>
           <div className='space-y-6'>
             {experience.map((item, index) => (
-              <Card key={index} {...item} />
+              <Card
+                key={index}
+                year={formatPeriod(item.start, item.end)}
+                title={item.title}
+                company={item.company}
+                points={item.points}
+              />
             ))}
           </div>
         </div>
@@ -61,7 +46,7 @@ function ExperienceSection() {
   )
 }
 
-const Card = ({ year, title, desc, company, organization }) => (
+const Card = ({ year, title, desc, points, company, organization }) => (
   <div className='group relative rounded-md border-l-4 border-primary-500 bg-white px-8 py-6 shadow-md transition-all duration-300 hover:shadow-xl'>
     <div className='absolute left-[-0.4rem] top-6 h-3 w-3 rounded-full border-2 border-white bg-primary-500 transition group-hover:scale-125' />
     <p className='text-sm text-gray-500'>{year}</p>
@@ -72,7 +57,14 @@ const Card = ({ year, title, desc, company, organization }) => (
     {company && (
       <p className='mb-2 text-sm italic text-primary-500'>{company}</p>
     )}
-    <p className='text-sm text-gray-600'>{desc}</p>
+    {desc && <p className='text-sm text-gray-600'>{desc}</p>}
+    {points?.length > 0 && (
+      <ul className='mt-2 list-disc space-y-1 pl-4 text-sm text-gray-600'>
+        {points.map((point) => (
+          <li key={point}>{point}</li>
+        ))}
+      </ul>
+    )}
   </div>
 )
 

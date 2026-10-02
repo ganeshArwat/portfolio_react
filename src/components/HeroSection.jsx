@@ -1,5 +1,6 @@
 import { Element, Link } from 'react-scroll'
 import { ArrowRight, Code2, Download, Github, Linkedin, Mail } from 'lucide-react'
+import { getExperienceSummary } from '../data/experience'
 
 const socialLinks = [
   {
@@ -20,6 +21,8 @@ const socialLinks = [
 ]
 
 function HeroSection() {
+  const experience = getExperienceSummary()
+
   return (
     <Element
       name='hero_section'
@@ -120,7 +123,9 @@ function HeroSection() {
             className='relative z-10 h-full w-full object-contain object-bottom'
           />
           <div className='absolute bottom-4 right-0 z-20 rounded-2xl border border-white/15 bg-[#120c28]/80 px-4 py-3 text-center shadow-lg backdrop-blur-sm'>
-            <p className='text-2xl font-bold leading-none text-white'>2+</p>
+            <p className='text-2xl font-bold leading-none text-white'>
+              {experience.badge}
+            </p>
             <p className='mt-1 text-[11px] leading-tight text-gray-300'>
               Years
               <br />
